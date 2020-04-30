@@ -9,6 +9,18 @@
 <div class="container">
     <div class="row">
     <div class="clo-12"><h1>Titulo</h1></div>
+    <div>
+        <?php
+
+        require_once "controller/WindowController.php";
+            $window[1]= new WindowController("Alerta");
+
+            echo "<pre>";
+            var_dump($window[1]);
+
+        ?>
+    
+    </div>
     </div>
 </div>
     
