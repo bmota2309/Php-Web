@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +11,15 @@
     <div class="clo-12"><h1>Titulo</h1></div>
     <div>
         <?php
+        
 
-        require_once "controller/WindowController.php";
-            $window[1]= new WindowController("Alerta");
+        require_once "app/controller/WindowController.php";
+             
+            $window= new WindowController("Alerta",true);
+            $window->alteraTamanho("20 x 30");
 
             echo "<pre>";
-            var_dump($window[1]);
-
+            var_dump($window);
         ?>
     
     </div>
